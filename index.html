@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <title>Jaunt</title>
 </head>
 <body>
-    <header> Jaunt </header>
-    <aside class=modal>Form Modal</aside>
+    <div class="custom-panel" >
+        <h1>Jaunt</h1>
+        
+      </div>
+    <aside class=modal>Form Modal
+        <button type="button" class="search button">Search</button>
+    </aside>
+    <fieldset class="large-7 cell">
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Food</label>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Landmarks</label>
+        <input id="checkbox3" type="checkbox"><label for="checkbox3">Hotels</label>
+      </fieldset>
+
     <section class = map></section>
     <div class=list>
         <div id=food>Food List</div>
