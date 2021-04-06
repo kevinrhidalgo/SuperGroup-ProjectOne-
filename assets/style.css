@@ -10,18 +10,19 @@
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.custom-panel {
-    background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/rural-road_JUWHTFEDY9.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
 h1 {
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
     color: white;
     font-size: 65px;
+}
+
+
+.custom-panel {
+    background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/rural-road_JUWHTFEDY9.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .search-button {
