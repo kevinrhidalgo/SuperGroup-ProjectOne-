@@ -1,0 +1,40 @@
+:root {
+    --lightblue: #2fa8e0;
+    --darkblue: #106a94;
+    --red: #e00421;
+    --yellow: #e0d819;
+    --gold: #948f18;
+} 
+
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.custom-panel, .custom-panel h1 {
+    background-color: var(--lightblue);
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    font-size: 65px;
+}
+
+.search-button {
+    background-color: var(--darkblue);
+    height: 35px;
+    width: 60px;
+    color: white;
+}
+
+.panel {
+    background-color: var(--lightblue);
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    font-size: 25px;
+    flex-direction: flex-end;
+}
+
+.map {
+    border: var(--darkblue);
+}
+
