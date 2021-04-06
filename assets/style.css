@@ -10,8 +10,15 @@
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.custom-panel, .custom-panel h1 {
-    background-color: var(--lightblue);
+.custom-panel {
+    background-image: url(assets\imgs\pexels-francesco-ungaro.jpg.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
     color: white;
