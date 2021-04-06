@@ -12,26 +12,35 @@
     <title>Jaunt</title>
 </head>
 <body>
+
    <div class="bg-img"></div> 
-    <div class="custom-panel" >
+    <div class="custom-panel">
         <h1>Jaunt</h1>
-        
-      </div>
+        </div>
     </div>    
-    <aside class=modal>Form Modal
-        <button type="button" id="btn" class="search-button">Search</button>
+    <!-- seach button to start the modal -->
+    <aside class = "modal">Form Modal
+        <button type = "button" id = "btn" class="search-button">Search</button>
     </aside>
+
+    <!-- these are the checkbox filters to select different options -->
     <fieldset class="large-7 cell">
         <input id="checkbox1" type="checkbox"><label for="checkbox1">Food</label>
         <input id="checkbox2" type="checkbox"><label for="checkbox2">Landmarks</label>
         <input id="checkbox3" type="checkbox"><label for="checkbox3">Hotels</label>
       </fieldset>
 
-    <section class = map></section>
-    <div class=list>
-        <div id=food>Food List</div>
-        <div id=landmark>Landmark List</div>
-        <div id=hotel>Hotel List</div>
+
+      <!-- the map should hook into here and display from here, should be in the center of the screen-->
+
+    <section class = "map"></section>
+
+    <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
+
+    <div class = "list">
+        <div id = "food" >Food List</div>
+        <div id = "landmark" >Landmark List</div>
+        <div id = "hotel" >Hotel List</div>
     </div>
 
     <script src="script.js"></script>

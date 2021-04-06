@@ -9,6 +9,6 @@ searchBtn.onclick = function() {
 
 // this function sees if they click on the screen , we need to add a conditional that when they click off of the modal it will close the modal. //
 
-window.onclick = function(closeModal) {
+window.onclick = function() {
     console.log("this is another registered click")
 }
