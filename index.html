@@ -30,32 +30,24 @@
           </label>
         </div>
         <div class="row columns">
-          <label>Hotel Chain
-            <select name="hotelchain" type=" " id = "form-input">
-              <option class = "BW" value="Best Western">Best Western</option>
-              <option class = "EM" value="Marriott">Marriott</option>
-              <option class = "EH" value=>Hilton</option>
-              <option>Wyndham</option>
-              <option>Hyatt</option>
+          <label>Select Fuel Type
+            <select name="selectGas" type="gasChoice" id = "form-input">
+              <option value="diesel">Diesel Fuel</option>
+              <option value="regGas">Regular Gasoline</option>
             </select>
           </label>
         </div>
-        <button type="button" onclick="test()" id = "btn" class="primary button expanded search-button">
+        <button type="button" id = "btn" class="primary button expanded search-button">
           Search
         </button>
+        <fieldset class="large-7 cell">
+          <input id="checkbox1" type="checkbox"><label for="checkbox1">Great Tourist Spots</label>
+        </fieldset>
      </form>
     </div>
     </aside>  
     
 <!-- end of modal -->
-
-    <!-- these are the checkbox filters to select different options -->
-    <fieldset class="large-7 cell">
-        <input id="checkbox1" type="checkbox"><label for="checkbox1">Food</label>
-        <input id="checkbox2" type="checkbox"><label for="checkbox2">Landmarks</label>
-        <input id="checkbox3" type="checkbox"><label for="checkbox3">Hotels</label>
-      </fieldset>
-
 
       <!-- the map should hook into here and display from here, should be in the center of the screen-->
 
@@ -63,7 +55,7 @@
 
 
 
-      <!-- this is where we can hitch the amadeus api -->
+      <!-- this is where we can hitch the gas station api -->
       <div class = "gasPrice large-5 cell">
         <div>
           <h4>Gas stations for your trip:</h4>
@@ -77,9 +69,7 @@
       </div>
     <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
     <div class = "list">
-        <div id = "food" >Food List</div>
-        <div id = "landmark" >Landmark List</div>
-        <div id = "hotel" >Hotel List</div>
+        <div id = "landmark" >Tourist Attractions</div>
     </div>
 
     <!-- this is the google map display -->
@@ -184,7 +174,7 @@
     <script src="script.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&callback=initMap"></script>
     <script src = "apikey.js"></script>
-    <script src="amad.js"></script>
+    <script src="gas.js"></script>
     <footer class="panel">Created by Super Group</footer>
 
     
