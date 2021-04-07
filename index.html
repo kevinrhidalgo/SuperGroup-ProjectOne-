@@ -25,19 +25,21 @@
         <h3>Plan Your Road Trip</h3>
         <div class="row columns">
           <label>Starting Point
-            <input type="text" name="keyword" placeholder="Any" class = "startpoint">
+            <input type="text" name="startpoint" placeholder="Any" id = "startpoint" class = "form-input">
           </label>
         </div>
         <div class="row columns">
-          <label>Destination
-            <select name="status" type="text" class = "destination">
-              <option>Any</option>
-              <option value="rent">Rent</option>
-              <option value="buy">Buy</option>
+          <label>Hotel Chain
+            <select name="hotelchain" type=" " id = "form-input">
+              <option class = "BW" value="Best Western">Best Western</option>
+              <option class = "EM" value="Marriott">Marriott</option>
+              <option class = "EH" value=>Hilton</option>
+              <option>Wyndham</option>
+              <option>Hyatt</option>
             </select>
           </label>
         </div>
-        <button type="button" id = "btn" class="primary button expanded search-button">
+        <button type="button" onclick="test()" id = "btn" class="primary button expanded search-button">
           Search
         </button>
      </form>
@@ -57,13 +59,26 @@
 
     <section class = "map"></section>
 
-    <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
 
+
+      <!-- this is where we can hitch the amadeus api -->
+      <div class = "amadeus large-5 cell">
+        <div class = "amadeusHotel">
+          <h4>Here's a list of hotels we found</h4>
+          <ul class = "amadeusList">
+            <li>Enter Hotel list here</li>
+          </ul>
+        </div>
+      </div>
+    <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
     <div class = "list">
         <div id = "food" >Food List</div>
         <div id = "landmark" >Landmark List</div>
         <div id = "hotel" >Hotel List</div>
     </div>
+
+    <!-- this is the google map display -->
+
     <div id="map"></div>
     <div id="right-panel">
       <div>
@@ -129,8 +144,13 @@
 
     <script src="script.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&callback=initMap"></script>
+<<<<<<< HEAD
     
 
+=======
+    <script src = "apikey.js"></script>
+    <script src="amad.js"></script>
+>>>>>>> 81bbb27fc1e6a56fa6ee35605015049c7069f8cb
     <footer class="panel">Created by Super Group</footer>
 
     

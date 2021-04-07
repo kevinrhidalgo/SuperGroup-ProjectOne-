@@ -1,11 +1,6 @@
 var modal = document.getElementsByClassName("modal");
-var searchBtn = document.getElementById("btn");
 var span = document.getElementsByClassName("close")[0];
 
-// this should open up the modal form
-searchBtn.onclick = function() {
-    console.log("this is a registered click")
-}
 
 // this function sees if they click on the screen , we need to add a conditional that when they click off of the modal it will close the modal. //
 
@@ -68,4 +63,15 @@ function initMap() {
     );
   }
 
-  
+
+
+
+
+  //local storage lines here
+  var inputStart= document.getElementById("startpoint");
+  localStorage.setItem("startpoint", location);
+  console.log("start input")
+
+  var inputDest= document.getElementById("destination");
+  localStorage.setItem("destination", location);
+  console.log("dest input")
