@@ -68,4 +68,15 @@ function initMap() {
     );
   }
 
-  
+
+
+
+
+  //local storage lines here
+  var inputStart= document.getElementById("startpoint");
+  localStorage.setItem("startpoint", location);
+  console.log("start input")
+
+  var inputDest= document.getElementById("destination");
+  localStorage.setItem("destination", location);
+  console.log("dest input")
