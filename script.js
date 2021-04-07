@@ -30,7 +30,7 @@ function initMap() {
     var waypts = [];
     var checkboxArray = document.getElementById("waypoints");
 
-    for (let i = 0; i < checkboxArray.length; i++) {
+    for (var i = 0; i < checkboxArray.length; i++) {
       if (checkboxArray.options[i].selected) {
         waypts.push({
           location: checkboxArray[i].value,
@@ -54,7 +54,7 @@ function initMap() {
           summaryPanel.innerHTML = "";
 
           // For each route, display summary information.
-          for (let i = 0; i < route.legs.length; i++) {
+          for (var i = 0; i < route.legs.length; i++) {
             var routeSegment = i + 1;
             summaryPanel.innerHTML +=
               "<b>Route Segment: " + routeSegment + "</b><br>";
