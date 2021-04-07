@@ -29,11 +29,13 @@
           </label>
         </div>
         <div class="row columns">
-          <label>Destination
+          <label>Hotel Chain
             <select name="status" type="text" class = "destination">
-              <option>Any</option>
-              <option value="rent">Rent</option>
-              <option value="buy">Buy</option>
+              <option class = "BW">Best Western</option>
+              <option class = "EM">Marriott</option>
+              <option class = "EH">Hilton</option>
+              <option>Wyndham</option>
+              <option>Hyatt</option>
             </select>
           </label>
         </div>
@@ -57,13 +59,26 @@
 
     <section class = "map"></section>
 
-    <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
 
+
+      <!-- this is where we can hitch the amadeus api -->
+      <div class = "amadeus large-5 cell">
+        <div class = "amadeusHotel">
+          <h4>Here's a list of hotels we found</h4>
+          <ul class = "amadeusList">
+            <li>Enter Hotel list here</li>
+          </ul>
+        </div>
+      </div>
+    <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
     <div class = "list">
         <div id = "food" >Food List</div>
         <div id = "landmark" >Landmark List</div>
         <div id = "hotel" >Hotel List</div>
     </div>
+
+    <!-- this is the google map display -->
+
     <div id="map"></div>
     <div id="right-panel">
       <div>
