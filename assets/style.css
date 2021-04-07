@@ -10,7 +10,7 @@
     font-family: 'Space Grotesk', sans-serif;
 }
 
-h1 {
+.custom-panel h1 {
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
     color: white;
@@ -19,10 +19,10 @@ h1 {
 
 
 .custom-panel {
-    background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/rural-road_JUWHTFEDY9.jpg);
+    background-image: url(../assets/imgs/rural-road_JUWHTFEDY9.jpg);
     width: 100%;
+    height: 30%;
     background-size: cover;
-    background-position: center;
 }
 
 .search-button {
