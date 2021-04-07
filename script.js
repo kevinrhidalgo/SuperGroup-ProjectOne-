@@ -63,12 +63,14 @@ function initMap() {
             summaryPanel.innerHTML +=
               route.legs[i].distance.text + "<br><br>";
           }
-        } else {
-          window.alert("Directions request failed due to " + status);
-        }
+        } 
       }
     );
   }
+
+
+
+
 
   //local storage lines here
   var inputStart= document.getElementById("startpoint");
