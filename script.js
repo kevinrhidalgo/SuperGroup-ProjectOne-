@@ -63,9 +63,9 @@ function initMap() {
             summaryPanel.innerHTML +=
               route.legs[i].distance.text + "<br><br>";
           }
-        } else {
-          window.alert("Directions request failed due to " + status);
-        }
+        } 
       }
     );
   }
+
+  
