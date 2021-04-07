@@ -18,10 +18,32 @@
         <h1>Jaunt</h1>
         </div>
     </div>    
+
     <!-- seach button to start the modal -->
-    <aside class = "modal">Form Modal
-        <button type = "button" id = "btn" class="search-button">Search</button>
-    </aside>
+    <div class="translucent-form-overlay">
+      <form>
+        <h3>Plan Your Road Trip</h3>
+        <div class="row columns">
+          <label>Starting Point
+            <input type="text" name="keyword" placeholder="Any">
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Destination
+            <select name="status" type="text">
+              <option>Any</option>
+              <option value="rent">Rent</option>
+              <option value="buy">Buy</option>
+            </select>
+          </label>
+        </div>
+        <button type="button" id = "btn" class="primary button expanded search-button">
+          Search
+        </button>
+     </form>
+    </div>
+    
+<!-- end of modal -->
 
     <!-- these are the checkbox filters to select different options -->
     <fieldset class="large-7 cell">
