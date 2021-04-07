@@ -25,21 +25,21 @@
         <h3>Plan Your Road Trip</h3>
         <div class="row columns">
           <label>Starting Point
-            <input type="text" name="keyword" placeholder="Any" id = "startpoint">
+            <input type="text" name="startpoint" placeholder="Any" id = "startpoint" class = "form-input">
           </label>
         </div>
         <div class="row columns">
           <label>Hotel Chain
-            <select name="status" type="text" class = "destination">
-              <option class = "BW">Best Western</option>
-              <option class = "EM">Marriott</option>
-              <option class = "EH">Hilton</option>
+            <select name="hotelchain" type=" " id = "form-input">
+              <option class = "BW" value="Best Western">Best Western</option>
+              <option class = "EM" value="Marriott">Marriott</option>
+              <option class = "EH" value=>Hilton</option>
               <option>Wyndham</option>
               <option>Hyatt</option>
             </select>
           </label>
         </div>
-        <button type="button" id = "btn" class="primary button expanded search-button">
+        <button type="button" onclick="test()" id = "btn" class="primary button expanded search-button">
           Search
         </button>
      </form>
@@ -178,8 +178,8 @@
 
     <script src="script.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&callback=initMap"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&libraries=places&callback=initMap"></script>
-
+    <script src = "apikey.js"></script>
+    <script src="amad.js"></script>
     <footer class="panel">Created by Super Group</footer>
 
     
