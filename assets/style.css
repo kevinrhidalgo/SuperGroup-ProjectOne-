@@ -1,111 +1,134 @@
 :root {
-    --lightblue: #2fa8e0;
-    --darkblue: #106a94;
-    --red: #e00421;
-    --yellow: #e0d819;
-    --gold: #948f18;
-} 
+  --lightblue: #2fa8e0;
+  --darkblue: #106a94;
+  --red: #e00421;
+  --yellow: #e0d819;
+  --gold: #948f18;
+}
 
 * {
-    font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
-    color: white;
-    font-size: 65px;
+.custom-panel h1 {
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  font-size: 65px;
 }
-
 
 .custom-panel {
-    background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/rural-road_JUWHTFEDY9.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+  background-image: url(../assets/imgs/rural-road_JUWHTFEDY9.jpg);
+  width: 100%;
+  height: 30%;
+  background-size: cover;
 }
 
 .search-button {
-    background-color: var(--darkblue);
-    height: 35px;
-    width: 60px;
-    color: white;
+  background-color: var(--darkblue);
+  height: 35px;
+  width: 60px;
+  color: white;
 }
 
 .panel {
-    background-color: var(--lightblue);
-    text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
-    color: white;
-    font-size: 25px;
-    flex-direction: flex-end;
-    align-items: flex-end;
+  position: sticky;
+  bottom: 0;
+  background-color: var(--lightblue);
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  font-size: 25px;
 }
 
 .map {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border: var(--darkblue);
 }
 
+.list {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
 #right-panel {
-    font-family: "Roboto", "sans-serif";
-    line-height: 30px;
-    padding-left: 10px;
-  }
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
+}
 
-  #right-panel select,
-  #right-panel input {
-    font-size: 15px;
-  }
+#right-panel select,
+#right-panel input {
+  font-size: 15px;
+}
 
-  #right-panel select {
-    width: 100%;
-  }
+#right-panel select {
+  width: 100%;
+}
 
-  #right-panel i {
-    font-size: 12px;
-  }
+#right-panel i {
+  font-size: 12px;
+}
 
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  #map {
-    height: 100%;
-    float: left;
-    width: 40%;
-    height: 100%;
-    
-  }
+#map {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  #right-panel {
-    margin: 20px;
-    border-width: 2px;
-    width: 20%;
-    height: 400px;
-    float: left;
-    text-align: left;
-    padding-top: 0;
-  }
+#right-panel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 20px;
+  border-width: 2px;
+  width: 20%;
+  height: 400px;
+  text-align: left;
+  padding-top: 0;
+}
 
-  #directions-panel {
-    margin-top: 10px;
-    background-color:var(--darkblue);
-    color:white;
-    font-size: 20px;
-    padding: 10px;
-    overflow: scroll;
-    height: 174px;
-  }
+#directions-panel {
+  position: relative;
+  margin-top: 10px;
+  background-color: var(--darkblue);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  overflow: scroll;
+  height: 174px;
+}
 
-
-  
 /* start of modal styling */
+.modalForm {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
 .translucent-form-overlay {
   max-width: 250px;
@@ -119,11 +142,13 @@ h1 {
   display: block;
 }
 
-.translucent-form-overlay h3, .translucent-form-overlay label {
+.translucent-form-overlay h3,
+.translucent-form-overlay label {
   color: #fefefe;
 }
 
-.translucent-form-overlay input, .translucent-form-overlay select {
+.translucent-form-overlay input,
+.translucent-form-overlay select {
   color: #8a8a8a;
 }
 
@@ -141,7 +166,7 @@ h1 {
 
 /* amadeus styling location */
 
-.amadeus {
+.gasPrice {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
