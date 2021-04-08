@@ -48,7 +48,8 @@ addMarkerWithInfowindow(map, new google.maps.LatLng(27.8225,-80.5602), '<div>St.
 addMarkerWithInfowindow(map, new google.maps.LatLng(26.7153,-80.0534), '<div>West Palm Beach</div>');
 addMarkerWithInfowindow(map, new google.maps.LatLng(25.7776,-80.2377), '<div>Little Havana</div>');
 addMarkerWithInfowindow(map, new google.maps.LatLng(25.7814,-80.1870), '<div>American Airlines Arena</div>');
-addMarkerWithInfowindow(map, new google.maps.LatLng(25.7459,-80.5550), '<div>Everglades Natioanl Park</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(25.7459,-80.5550), '<div>Everglades National Park</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(25.958056,-80.238889), '<div>Dolphins Stadium</div>');
     directionsRenderer.setMap(map);
     document.getElementById("submit").addEventListener("click", () => {
       calculateAndDisplayRoute(directionsService, directionsRenderer);
