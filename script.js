@@ -25,11 +25,12 @@ window.onclick = function() {
 function initMap() {
     var directionsService = new google.maps.DirectionsService();
     var directionsRenderer = new google.maps.DirectionsRenderer();
-    
+
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: 6,
       center: { lat: 41.85, lng: -87.65 },
     });
+
     // init map
 var mapDiv = document.getElementById("map");
 myLatlng = new google.maps.LatLng(28.5383,-81.3792);
@@ -49,6 +50,8 @@ addMarkerWithInfowindow(map, new google.maps.LatLng(26.7153,-80.0534), '<div>Wes
 addMarkerWithInfowindow(map, new google.maps.LatLng(25.7776,-80.2377), '<div>Little Havana</div>');
 addMarkerWithInfowindow(map, new google.maps.LatLng(25.7814,-80.1870), '<div>American Airlines Arena</div>');
 addMarkerWithInfowindow(map, new google.maps.LatLng(25.7459,-80.5550), '<div>Everglades Natioanl Park</div>');
+
+
     directionsRenderer.setMap(map);
     document.getElementById("submit").addEventListener("click", () => {
       calculateAndDisplayRoute(directionsService, directionsRenderer);
