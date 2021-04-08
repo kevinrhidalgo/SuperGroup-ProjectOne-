@@ -1,4 +1,4 @@
-:root {
+ :root {
   --lightblue: #2fa8e0;
   --darkblue: #106a94;
   --red: #e00421;
@@ -10,7 +10,7 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
-.custom-panel h1 {
+ .custom-panel h1 {
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
   color: white;
@@ -24,13 +24,15 @@
   background-size: cover;
 }
 
+/*
 .search-button {
   background-color: var(--darkblue);
   height: 35px;
   width: 60px;
   color: white;
-}
+} */
 
+/*
 .panel {
   position: sticky;
   bottom: 0;
@@ -87,15 +89,23 @@ body {
 }
 
 #map {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  height: 100%;
-  width: 40%;
-  height: 100%;
+  height: 60%;
+  width: 50%;
+  justify-content: center;
+
+
+
+
+
+
+
+  /* position: relative;
+  display: no-flex;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-}
+   float: inline-start; */
+/* }
 
 #right-panel {
   display: flex;
@@ -119,10 +129,10 @@ body {
   padding: 10px;
   overflow: scroll;
   height: 174px;
-}
+} 
 
 /* start of modal styling */
-.modalForm {
+/* .modalForm {
   position: static;
   display: flex;
   flex-wrap: wrap;
@@ -142,7 +152,7 @@ body {
   display: block;
 }
 
-.translucent-form-overlay h3,
+.translucent-form-overlay h2,
 .translucent-form-overlay label {
   color: #fefefe;
 }
@@ -164,11 +174,9 @@ body {
   color: #8a8a8a;
 }
 
-/* amadeus styling location */
-
 .gasPrice {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
+  align-items: flex-end;
+  flex-wrap: nowrap;
+} 

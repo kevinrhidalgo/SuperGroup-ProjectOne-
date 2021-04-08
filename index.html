@@ -5,37 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="reset" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Jaunt</title>
 </head>
 <body>
 
-   <div class="bg-img"></div> 
+   <div class="bg-img"> 
     <div class="custom-panel">
         <h1>Jaunt</h1>
-        </div>
-    </div>    
+    </div>
+   </div>    
 
-    <!-- seach button to start the modal -->
-    <aside class = "modalForm">
-    <div class="translucent-form-overlay">
-      <form>
-        <h3>Plan Your Road Trip</h3>
-        <div class="row columns">
-          <label>Starting Point
-            <input type="text" name="startpoint" placeholder="Any" id = "startpoint" class = "form-input" value="city">
-          </label>
-        </div>
-        <div class="row columns">
-          <label>Select Fuel Type
+    <!-- start of modal -->
+<!--div class grid x  -->
+<div class="grid-x">
+    <aside class = "modalForm" class = "cell small-2">
+     <div class="translucent-form-overlay">
+       <form>
+         <h2>Plan Your Road Trip</h2>
+         <div class="row columns">
+
+           <label>Starting Point
+             <input type="text" name="startpoint" placeholder="Any" id = "startpoint" class = "form-input" value="city">
+           </label>
+
+         </div>
+         <div class="row columns">
+
+            <label>Select Fuel Type</label>
             <select name="selectGas" type="gasChoice" id = "form-input">
               <option value="diesel">Diesel Fuel</option>
               <option value="regGas">Regular Gasoline</option>
             </select>
-            <label>Select Fueling Location
+
+              <label>Select Fueling Location</label>
               <select name="selectcity" id = "gas-input">
                 <option value="Orlando">Orlando</option>
                 <option value="Melbourne">Melbourne</option>
@@ -44,28 +50,30 @@
                 <option value="Ft. Lauderdale">Ft. Lauderdale</option>
                 <option value="Miami">Miami</option>
               </select>
-          </label>
-        </div>
+          
+         </div>
         <button type="button" id = "btn" class="primary button expanded search-button">
           Search
         </button>
         <fieldset class="large-7 cell">
           <input id="checkbox1" type="checkbox"><label for="checkbox1">Great Tourist Spots</label>
         </fieldset>
-     </form>
-    </div>
-    </aside>  
-    
-<!-- end of modal -->
-
-      <!-- the map should hook into here and display from here, should be in the center of the screen-->
-
-    <section class = "map"></section>
+       </form>
+      </div>
+   </aside>  
+   </div>
+   <!-- end of modal -->
 
 
+ <!-- the map should hook into here and display from here, should be in the center of the screen-->
+ <!--div grid x  -->
+   
+  <section class = "map"></section>
+  
 
-      <!-- this is where we can hitch the gas station api -->
-      <div class = "gasPrice large-5 cell">
+  
+  <!-- this is where we can hitch the gas station api -->
+  <div class = "gasPrice large-5 cell">
         <div>
           <h4>Gas stations for your trip:</h4>
           <ul class = "Orlando"></ul>
@@ -76,14 +84,16 @@
           <ul class = "Miami"></ul>
         </div>
       </div>
+
+ 
     <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
     <div class = "list">
         <div id = "landmark" >Tourist Attractions</div>
-    </div>
+      </div>
 
     <!-- this is the google map display -->
 
-    <div id="map"></div>
+    <div id="map" class="float-center"></div>
     <div id="right-panel">
       <div>
         <b>Starting Point:</b>
@@ -114,7 +124,7 @@
 
         </select>
 
-
+        
         <br />
         <b>Waypoints:</b> <br />
        
@@ -180,12 +190,14 @@
 
     
 
-    <script src="script.js"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&callback=initMap"></script>
-    <script src = "apikey.js"></script>
-    <script src="gas.js"></script>
-    <footer class="panel">Created by Super Group</footer>
-
-    
-</body>
-</html>
+  </div>
+ </div>
+  
+  
+  <script src="script.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&callback=initMap"></script>
+  <script src = "apikey.js"></script>
+  <script src="gas.js"></script>
+  <footer class="panel">Created by Super Group</footer>
+  </body>
+  </html>
