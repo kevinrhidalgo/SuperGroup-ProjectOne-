@@ -14,25 +14,24 @@
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
   color: white;
-  font-size: 65px;
+  font-size: 70px;
 }
 
 .custom-panel {
   background-image: url(../assets/imgs/rural-road_JUWHTFEDY9.jpg);
   width: 100%;
-  height: 30%;
+  height: 100%;
   background-size: cover;
-}
+} 
 
-/*
+
 .search-button {
   background-color: var(--darkblue);
   height: 35px;
   width: 60px;
   color: white;
-} */
+}
 
-/*
 .panel {
   position: sticky;
   bottom: 0;
@@ -41,21 +40,6 @@
   font-family: "Space Grotesk", sans-serif;
   color: white;
   font-size: 25px;
-}
-
-.map {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border: var(--darkblue);
-}
-
-.list {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
 }
 
 #right-panel {
@@ -81,31 +65,25 @@
   font-size: 12px;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 #map {
+  position: relative;
   height: 60%;
   width: 50%;
   justify-content: center;
+}
 
-
-
-
-
-
-
-  /* position: relative;
-  display: no-flex;
-  justify-content: center;
+.gasPrice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+} 
+  
+.list {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-   float: inline-start; */
-/* }
+  justify-content: flex-end;
+}
 
 #right-panel {
   display: flex;
@@ -132,7 +110,7 @@ body {
 } 
 
 /* start of modal styling */
-/* .modalForm {
+.modalForm {
   position: static;
   display: flex;
   flex-wrap: wrap;
@@ -173,10 +151,3 @@ body {
 .translucent-form-overlay input::placeholder {
   color: #8a8a8a;
 }
-
-.gasPrice {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-wrap: nowrap;
-} 

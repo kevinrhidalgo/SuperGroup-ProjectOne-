@@ -19,12 +19,16 @@
     </div>
    </div>    
 
+
+
+
+
     <!-- start of modal -->
-<!--div class grid x  -->
-<div class="grid-x">
-    <aside class = "modalForm" class = "cell small-2">
+
+    <aside class = "modalForm">
      <div class="translucent-form-overlay">
        <form>
+         
          <h2>Plan Your Road Trip</h2>
          <div class="row columns">
 
@@ -34,8 +38,8 @@
 
          </div>
          <div class="row columns">
-
             <label>Select Fuel Type</label>
+
             <select name="selectGas" type="gasChoice" id = "form-input">
               <option value="diesel">Diesel Fuel</option>
               <option value="regGas">Regular Gasoline</option>
@@ -55,13 +59,17 @@
         <button type="button" id = "btn" class="primary button expanded search-button">
           Search
         </button>
-        <fieldset class="large-7 cell">
+        <fieldset class="large-8 cell">
           <input id="checkbox1" type="checkbox"><label for="checkbox1">Great Tourist Spots</label>
         </fieldset>
        </form>
-      </div>
-   </aside>  
-   </div>
+     </div>
+    </aside>  
+
+
+
+
+
    <!-- end of modal -->
 
 
@@ -84,7 +92,6 @@
           <ul class = "Miami"></ul>
         </div>
       </div>
-
  
     <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
     <div class = "list">
@@ -93,7 +100,7 @@
 
     <!-- this is the google map display -->
 
-    <div id="map" class="float-center"></div>
+    <div id="map" class="float-right"></div>
     <div id="right-panel">
       <div>
         <b>Starting Point:</b>
@@ -188,10 +195,7 @@
       <div id="directions-panel"></div>
     </div>
 
-    
-
   </div>
- </div>
   
   
   <script src="script.js"></script>
@@ -199,6 +203,7 @@
   <script src = "apikey.js"></script>
   <script src="gas.js"></script>
   <footer class="panel">Created by Super Group</footer>
+  
   </body>
   </html>
 
