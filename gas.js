@@ -90,7 +90,7 @@ var melbourneGas = document.getElementsByClassName("Melbourne");
 var lGas = document.getElementsByClassName("Pt-St-Lucie");
 var bGas = document.getElementsByClassName("Boca-Roton");
 var fortGas = document.getElementsByClassName("Fort-Lauderdale");
-var mGas = document.getElementsByClassName("Miami");
+var miGas = document.getElementsByClassName("Miami");
 
 console.log(melbourneGas)
 
@@ -147,14 +147,36 @@ function addGasLi(data) {
         }
     } else if (fortGas[2].includes(localStorageObj.GasCity)) {
             for (i = 0; i < fortGas.length; i++)
-                createListing;
+            var createListing = document.createElement("li");
                 createListing.textContent = fortGas[i]
                 fortGas[0].appendChild(createListing)
         } else if (orlandoGas[2].includes(localStorageObj.GasCity)) {
             for (i = 0; i < orlandoGas.length; i++) {
-                createListing;
+              var createListing = document.createElement("li");
                 createListing.textContent = orlandoGas[i]
-                orlGas.textContent = orlandoGas[i]
-            }
-    }
-}
+                orlGas[0].appendChild(createListing)
+            } 
+           } else if (miamiGas[2].includes(localStorageObj.GasCity)) {
+             for (i = 0; i < miamiGas.length; i++) {
+              var createListing = document.createElement("li");
+               createListing.textContent = miamiGas[i]
+               miGas[0].appendChild(createListing)
+             }
+           } else if (lucieGas[2].includes(localStorageObj.GasCity)) {
+            for (i = 0; i < lucieGas.length; i++) {
+              var createListing = document.createElement("li");
+              createListing.textContent = lucieGas[i]
+              lGas[0].appendChild(createListing)
+           }
+    
+        } else { 
+          bocaGas[2].includes(localStorageObj.GasCity)
+            for (i = 0; i < bocaGas.length; i++) {
+              var createListing = document.createElement("li");
+              createListing.textContent = bocaGas[i]
+              bGas[0].appendChild(createListing)
+          }
+        }
+      }
+    
+      
