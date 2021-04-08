@@ -37,6 +37,7 @@ var map = new google.maps.Map(mapDiv, {
   
   center: myLatlng,
   zoom: 3
+
 });
 
 

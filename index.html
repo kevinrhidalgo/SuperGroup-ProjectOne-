@@ -5,37 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="reset" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Jaunt</title>
 </head>
 <body>
 
-   <div class="bg-img"></div> 
+   <div class="bg-img"> 
     <div class="custom-panel">
+<<<<<<< HEAD
         <h1>Jaunt <div id="bt">.beta</h1>
         </div>
     </div>    
+=======
+        <h1>Jaunt</h1>
+    </div>
+   </div>    
 
-    <!-- seach button to start the modal -->
+
+
+
+
+    <!-- start of modal -->
+>>>>>>> c7300fecf4088cdb47dc1b1035307ce303f563d8
+
     <aside class = "modalForm">
-    <div class="translucent-form-overlay">
-      <form>
-        <h3>Plan Your Road Trip</h3>
-        <div class="row columns">
-          <label>Starting Point
-            <input type="text" name="startpoint" placeholder="Any" id = "startpoint" class = "form-input" value="city">
-          </label>
-        </div>
-        <div class="row columns">
-          <label>Select Fuel Type
+     <div class="translucent-form-overlay">
+       <form>
+         
+         <h2>Plan Your Road Trip</h2>
+         <div class="row columns">
+
+           <label>Starting Point
+             <input type="text" name="startpoint" placeholder="Any" id = "startpoint" class = "form-input" value="city">
+           </label>
+
+         </div>
+         <div class="row columns">
+            <label>Select Fuel Type</label>
+
             <select name="selectGas" type="gasChoice" id = "form-input">
               <option value="diesel">Diesel Fuel</option>
               <option value="regGas">Regular Gasoline</option>
             </select>
-            <label>Select Fueling Location
+
+              <label>Select Fueling Location</label>
               <select name="selectcity" id = "gas-input">
                 <option value="Orlando">Orlando</option>
                 <option value="Melbourne">Melbourne</option>
@@ -44,30 +60,40 @@
                 <option value="Ft. Lauderdale">Ft. Lauderdale</option>
                 <option value="Miami">Miami</option>
               </select>
-          </label>
-        </div>
+          
+         </div>
         <button type="button" id = "btn" class="primary button expanded search-button">
           Search
         </button>
-        <fieldset class="large-7 cell">
+        <fieldset class="large-8 cell">
           <input id="checkbox1" type="checkbox"><label for="checkbox1">Great Tourist Spots</label>
         </fieldset>
-     </form>
-    </div>
+       </form>
+     </div>
     </aside>  
-    
-<!-- end of modal -->
 
-      <!-- the map should hook into here and display from here, should be in the center of the screen-->
 
+<<<<<<< HEAD
 
     
     <section class = "map"></section>
+=======
+>>>>>>> c7300fecf4088cdb47dc1b1035307ce303f563d8
 
 
 
-      <!-- this is where we can hitch the gas station api -->
-      <div class = "gasPrice large-5 cell">
+   <!-- end of modal -->
+
+
+ <!-- the map should hook into here and display from here, should be in the center of the screen-->
+ <!--div grid x  -->
+   
+  <section class = "map"></section>
+  
+
+  
+  <!-- this is where we can hitch the gas station api -->
+  <div class = "gasPrice large-5 cell">
         <div>
           <h4>Gas stations for your trip:</h4>
           <ul class = "Orlando"></ul>
@@ -78,50 +104,73 @@
           <ul class = "Miami"></ul>
         </div>
       </div>
+ 
     <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
     <div class = "list">
         <div id = "landmark" >Tourist Attractions</div>
-    </div>
+      </div>
 
     <!-- this is the google map display -->
 
-    <div id="map"></div>
+    <div id="map" class="float-right"></div>
     <div id="right-panel">
       <div>
         <b>Starting Point:</b>
         <select id="start">
           <option value="Orlando,FL">Orlando,FL</option>
-          <option value="Melbourne, FL">Melbourne, FL </option>
-          <option value="Port St.lucie,FL">Port St.Lucie, FL</option>
-          <option value="Boca Raton, FL">Boca Raton, FL</option>
-          <option value="Fort Lauderdale, FL">Fort Lauderdale, FL</option>
-          <option value="Miami, FL">Miami,FL</option>
-          <option value="Atlanta, GA">Atlanta,GA</option>
           <option value="Boston, MA">Boston,MA</option>
           <option value="New York, NY">New York,NY</option>
-          <option value="Philadelphia, PA">Philadelphia,PA</option> 
+          <option value="Miami, FL">Miami,FL</option>
+          <option value="Los Angeles, CA">Los Angeles,CA</option>
+          <option value="Chicago, IL">Chicago,IL</option>
+          <option value="Houston, TX">Houston,TX</option>
+          <option value="Phoenix, AZ">Phoenix,AZ</option>
+          <option value="Philadelphia, PA">Philadelphia,PA</option>
+          <option value="San Diego, CA">San Diego,CA</option>
+          <option value="Dallas, TX">Dallas,TX</option>
+          <option value="San Francisco, CA">San Francisco,CA</option>
+          <option value="Seattle, WA">Seattle,WA</option>
+          <option value="Denver, CO">Denver,CO</option>
           <option value="Washington, D.C.">Washington,D.C.</option>
+          <option value="Nashville, TN">Nashville,TN</option>
+          <option value="Las Vegas, NV">Las Vegas,NV</option>
+          <option value="San Antonio, TX">San Antonio,TX</option>
+          <option value="New Orleans, LA ">New Orleans,LA</option>
+          <option value="St Louis, MO">St.Louis,MO</option>
+          <option value="Detroit, MI">Detroit,MI</option>
+          <option value="Atlanta, GA">Atlanta,GA</option>
+          <option value="Minnepolis, MN">Minnepolis,MN</option>
 
         </select>
 
-
+        
         <br />
         <b>Waypoints:</b> <br />
        
         <select multiple id="waypoints">
           <option value="Orlando,FL">Orlando,FL</option>
-          <option value="Melbourne, FL">Melbourne, FL </option>
-          <option value="Port St.lucie,FL">Port St.Lucie, FL</option>
-          <option value="Boca Raton, FL">Boca Raton, FL</option>
-          <option value="Fort Lauderdale, FL">Fort Lauderdale, FL</option>
-          <option value="Miami, FL">Miami,FL</option>
-          <option value="Atlanta, GA">Atlanta,GA</option>
           <option value="Boston, MA">Boston,MA</option>
           <option value="New York, NY">New York,NY</option>
-          <option value="Philadelphia, PA">Philadelphia,PA</option> 
+          <option value="Miami, FL">Miami,FL</option>
+          <option value="Los Angeles, CA">Los Angeles,CA</option>
+          <option value="Chicago, IL">Chicago,IL</option>
+          <option value="Houston, TX">Houston,TX</option>
+          <option value="Phoenix, AZ">Phoenix,AZ</option>
+          <option value="Philadelphia, PA">Philadelphia,PA</option>
+          <option value="San Diego, CA">San Diego,CA</option>
+          <option value="Dallas, TX">Dallas,TX</option>
+          <option value="San Francisco, CA">San Francisco,CA</option>
+          <option value="Seattle, WA">Seattle,WA</option>
+          <option value="Denver, CO">Denver,CO</option>
           <option value="Washington, D.C.">Washington,D.C.</option>
-    
-          
+          <option value="Nashville, TN">Nashville,TN</option>
+          <option value="Las Vegas, NV">Las Vegas,NV</option>
+          <option value="San Antonio, TX">San Antonio,TX</option>
+          <option value="New Orleans, LA ">New Orleans,LA</option>
+          <option value="St Louis, MO">St.Louis,MO</option>
+          <option value="Detroit, MI">Detroit,MI</option>
+          <option value="Atlanta, GA">Atlanta,GA</option>
+          <option value="Minnepolis, MN">Minnepolis,MN</option>
         </select>
        
         <b>End Point:</b>
@@ -129,16 +178,28 @@
         
         <select id="end">
           <option value="Orlando,FL">Orlando,FL</option>
-          <option value="Melbourne, FL">Melbourne, FL </option>
-          <option value="Port St.lucie,FL">Port St.Lucie, FL</option>
-          <option value="Boca Raton, FL">Boca Raton, FL</option>
-          <option value="Fort Lauderdale, FL">Fort Lauderdale, FL</option>
-          <option value="Miami, FL">Miami,FL</option>
-          <option value="Atlanta, GA">Atlanta,GA</option>
           <option value="Boston, MA">Boston,MA</option>
           <option value="New York, NY">New York,NY</option>
-          <option value="Philadelphia, PA">Philadelphia,PA</option> 
+          <option value="Miami, FL">Miami,FL</option>
+          <option value="Los Angeles, CA">Los Angeles,CA</option>
+          <option value="Chicago, IL">Chicago,IL</option>
+          <option value="Houston, TX">Houston,TX</option>
+          <option value="Phoenix, AZ">Phoenix,AZ</option>
+          <option value="Philadelphia, PA">Philadelphia,PA</option>
+          <option value="San Diego, CA">San Diego,CA</option>
+          <option value="Dallas, TX">Dallas,TX</option>
+          <option value="San Francisco, CA">San Francisco,CA</option>
+          <option value="Seattle, WA">Seattle,WA</option>
+          <option value="Denver, CO">Denver,CO</option>
           <option value="Washington, D.C.">Washington,D.C.</option>
+          <option value="Nashville, TN">Nashville,TN</option>
+          <option value="Las Vegas, NV">Las Vegas,NV</option>
+          <option value="San Antonio, TX">San Antonio,TX</option>
+          <option value="New Orleans, LA ">New Orleans,LA</option>
+          <option value="St Louis, MO">St.Louis,MO</option>
+          <option value="Detroit, MI">Detroit,MI</option>
+          <option value="Atlanta, GA">Atlanta,GA</option>
+          <option value="Minnepolis, MN">Minnepolis,MN</option>
         </select>
         <br />
         <input type="submit" id="submit" />
@@ -146,23 +207,15 @@
       <div id="directions-panel"></div>
     </div>
 
-    
+  </div>
+  
+  
+  <script src="script.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&callback=initMap"></script>
+  <script src = "apikey.js"></script>
+  <script src="gas.js"></script>
+  <footer class="panel">Created by Super Group</footer>
+  
+  </body>
+  </html>
 
-    <script src="script.js"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&callback=initMap"></script>
-<<<<<<< HEAD
-    
-
-=======
-    <script src = "apikey.js"></script>
-<<<<<<< HEAD
-    <script src="amad.js"></script>
->>>>>>> 81bbb27fc1e6a56fa6ee35605015049c7069f8cb
-=======
-    <script src="gas.js"></script>
->>>>>>> 1c3ac77e6bfd167662392034dd2274191c0eacc1
-    <footer class="panel">Created by Super Group</footer>
-
-    
-</body>
-</html>

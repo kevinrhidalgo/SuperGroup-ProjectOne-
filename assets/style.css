@@ -1,4 +1,4 @@
-:root {
+ :root {
   --lightblue: #2fa8e0;
   --darkblue: #106a94;
   --red: #e00421;
@@ -14,19 +14,20 @@
   color:lightblue;
 }
 
-.custom-panel h1 {
+ .custom-panel h1 {
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
   color: white;
-  font-size: 65px;
+  font-size: 70px;
 }
 
 .custom-panel {
   background-image: url(../assets/imgs/rural-road_JUWHTFEDY9.jpg);
   width: 100%;
-  height: 30%;
+  height: 100%;
   background-size: cover;
-}
+} 
+
 
 .search-button {
   background-color: var(--darkblue);
@@ -43,21 +44,6 @@
   font-family: "Space Grotesk", sans-serif;
   color: white;
   font-size: 25px;
-}
-
-.map {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border: var(--darkblue);
-}
-
-.list {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
 }
 
 #right-panel {
@@ -83,22 +69,24 @@
   font-size: 12px;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+#map {
+  position: absolute;
+  height: 60%;
+  width: 50%;
+  justify-content: center;
 }
 
-#map {
+.gasPrice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+} 
+  
+.list {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  height: 100%;
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 #right-panel {
@@ -123,7 +111,7 @@ body {
   padding: 10px;
   overflow: scroll;
   height: 174px;
-}
+} 
 
 /* start of modal styling */
 .modalForm {
@@ -146,7 +134,7 @@ body {
   display: block;
 }
 
-.translucent-form-overlay h3,
+.translucent-form-overlay h2,
 .translucent-form-overlay label {
   color: #fefefe;
 }
@@ -166,13 +154,4 @@ body {
 
 .translucent-form-overlay input::placeholder {
   color: #8a8a8a;
-}
-
-/* amadeus styling location */
-
-.gasPrice {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
