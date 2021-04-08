@@ -6,43 +6,64 @@ var searchValue = document.querySelector("input", startpoint);
 var nameInput = document.getElementById('destination');
 // var = JSON.parse(localStorage.getItem("cities")) || [];
 
-var cityQuery = "https://api.collectapi.com/gasPrice/fromCity?city="
 // console.log(test)
 var queryUrl = "https://api.collectapi.com/gasPrice/stateUsaPrice?state=FL";
 
 //console logs city that was searched
 searchBtn.addEventListener("click", function(getValue) {
-    var city = document.getElementById("startpoint").value;
-    var dropDown = document.getElementById("form-input").value;
-    var fuelCity = document.getElementById("gas-input").value; 
+    var city = document.getElementById("startpoint").value.trim();
+    var dropDown = document.getElementById("form-input").value.trim();
+    var fuelCity = document.getElementById("gas-input").value.trim(); 
+    console.log(object)
+    console.log(city)
+    console.log(dropDown); 
     var object = {
         City: city, 
         GasType: dropDown,
         GasCity: fuelCity
 
     };   
-    console.log(object)
-    console.log(city)
         // gasSearch=city
-        console.log(gasSearch)
-        console.log(dropDown); 
         // localStorage.setItem("fuelType", JSON.stringify(dropDown));
         function storeSearch() {
         localStorage.setItem("city", JSON.stringify(object));
     }
     storeSearch();
-    test();
+    getObject();
 })
 
 
-function test() {
-    // fetch (cityQuery) + 
-       var retrieveObject = JSON.parse(localStorage.getItem("city", "GasCity"));
-       retrieveObject.GasCity;
-       console.log(retrieveObject.GasCity)
+function getObject() {
+    var retrieveObject = JSON.parse(localStorage.getItem("city", "GasCity"));
+    var citySearched = retrieveObject.GasCity;
+    retrieveObject.GasCity;
+    console.log("This is the retrieved object---------")
+    console.log(retrieveObject.GasCity)
+    cityFetch(citySearched);
 
-   } 
+} 
+// if searched city = data.city put that data on the page
+function cityFetch(citySearched) {
+    var cityQuery = "https://api.collectapi.com/gasPrice/stateUsaPrice?state=FL"
+    // fetch(cityQuery) + GasCity + 
+    console.log("This is city query")
+    console.log(cityQuery)
+    fetch(cityQuery,{
 
+        headers:{
+            "authorization":"apikey "+gasApi
+        }
+        })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+    })
+
+
+
+}
 
 
 
