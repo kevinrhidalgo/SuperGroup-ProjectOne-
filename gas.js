@@ -36,10 +36,10 @@ searchBtn.addEventListener("click", function(getValue) {
 
 
 function test() {
-    // fetch (cityQuery)   
+    // fetch (cityQuery) + 
        var retrieveObject = JSON.parse(localStorage.getItem("city", "GasCity"));
        retrieveObject.GasCity;
-       console.log(retrieveObject)
+       console.log(retrieveObject.GasCity)
 
    } 
 
