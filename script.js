@@ -3,54 +3,58 @@ var span = document.getElementsByClassName("close")[0];
 
 
 // this function sees if they click on the screen , we need to add a conditional that when they click off of the modal it will close the modal. //
+function addMarkerWithInfowindow(map, marker_position, infowindow_content){
+  var coord, marker, infowindow,contentString;
+  marker = new google.maps.Marker({
+      position: marker_position,
+      map: map
+  });
+  contentString = infowindow_content;
+  infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+  marker.addListener('click', function() {
+     infowindow.open(map, marker);
+  });
+}
 
 window.onclick = function() {
     console.log("this is another registered click")
 }
 
 function initMap() {
-  var locationOne = {lat: 28.404, lng: -81.579};
-  
     var directionsService = new google.maps.DirectionsService();
     var directionsRenderer = new google.maps.DirectionsRenderer();
-    var locations = [
-      {title: 'Disney World', location: {lat: 28.404, lng: -81.579}},
-      {title: 'Amway Arena', location: {lat: 28.539, lng: -81.383}},
-      {title: 'Tosohatche', location: {lat: 28.499, lng: -80.917}},
-      {title: 'Rivers Lake Conservative area', location: {lat: 28.236, lng: -80.82}},
-      {title: 'St.Sebastian River State Park', location: {lat: 27.828, lng: -80.56}},
-      {title: 'West Palm Beach', location: {lat: 26.715, lng: -80.05}}
-      
-      
-
-      
-  ];
+    
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: 6,
-      center: { lat: 28.5383, lng: -81.3792 },
+      center: { lat: 41.85, lng: -87.65 },
     });
-
-    for (var i = 0; i < locations.length; i++) {
-      var position = locations[i].location;
-      var title = locations[i].title;
-      var marker = new google.maps.Marker({
-          map: map,
-          position: position,
-          title: title,
-          animation: google.maps.Animation.DROP,
-          id: i
-          
-
-      });
-
-  }
+    // init map
+var mapDiv = document.getElementById("map");
+myLatlng = new google.maps.LatLng(28.5383,-81.3792);
+var map = new google.maps.Map(mapDiv, {
   
+  center: myLatlng,
+  zoom: 3
+});
+
+
+addMarkerWithInfowindow(map, new google.maps.LatLng(28.3852,-81.5639), '<div>Disney World</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(28.5392,-81.3839), '<div>Amway Arena</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(28.4985,-80.9976), '<div>Tosohatche Wildlife Area</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(28.2359,-80.8212), '<div>Rivers Lake Conservation Area</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(27.8225,-80.5602), '<div>St.Sebastian River Preserve Park</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(26.7153,-80.0534), '<div>West Palm Beach</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(25.7776,-80.2377), '<div>Little Havana</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(25.7814,-80.1870), '<div>American Airlines Arena</div>');
+addMarkerWithInfowindow(map, new google.maps.LatLng(25.7459,-80.5550), '<div>Everglades Natioanl Park</div>');
     directionsRenderer.setMap(map);
     document.getElementById("submit").addEventListener("click", () => {
       calculateAndDisplayRoute(directionsService, directionsRenderer);
-      console.log("click");
     });
   }
+  
 
   function calculateAndDisplayRoute(directionsService, directionsRenderer) {
     var waypts = [];
@@ -93,8 +97,8 @@ function initMap() {
       }
     );
   }
+ 
 
-  
 
 
 

@@ -9,6 +9,10 @@
 * {
   font-family: "Space Grotesk", sans-serif;
 }
+#bt{
+  font-size: 15px;
+  color:lightblue;
+}
 
 .custom-panel h1 {
   text-align: center;
