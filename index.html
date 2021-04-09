@@ -26,7 +26,7 @@
 
           <!-- start of modal -->
   
-    <div class= "grid-x grid-margin-x">
+    <!-- <div class= "grid-x grid-margin-x"> -->
       <div class = "cell"> <aside class = "modalForm"></div>
      <div class="translucent-form-overlay" class= large-3>
 
@@ -66,12 +66,13 @@
           <input id="checkbox1" type="checkbox" class= large-6><label for="checkbox1">Great Tourist Spots</label>
         </fieldset>
       </form>
-      <section class = "map" class = "large-3"></section>
+      <div>
+        <section class = "map" class = "large-3" class = "container"></section>
       </div>
-    </aside>  
-  </div>
-  
-  
+    </div>
+  </aside>  
+</div>
+
 
 
           <!-- end of modal -->
@@ -98,14 +99,13 @@
  
            <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
     <div class = "list">
-        <div id = "landmark" >Tourist Attractions</div>
       </div>
 
            <!-- this is the google map display -->
 
-    <div id="map" class="float-right"></div>
+    <div id="map">
     <div id="right-panel">
-      <div>
+      <div class="googlesearch">
         <b>Starting Point:</b>
         <select id="start">
           <option value="Orlando,FL">Orlando,FL</option>
@@ -197,6 +197,7 @@
       </div>
       <div id="directions-panel"></div>
     </div>
+  
 
   </div>
   
@@ -205,7 +206,9 @@
   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeME6J3e7XqD4t67bpo-MffqXBDWO83Bc&callback=initMap"></script>
   <script src = "apikey.js"></script>
   <script src="gas.js"></script>
-  <footer class="panel">Created by Super Group</footer>
+  <footer class="footerpanel">
+    <p>Created by Super Group</p>
+  </footer>
   
   </body>
   </html>

@@ -9,7 +9,8 @@
 * {
   font-family: "Space Grotesk", sans-serif;
 }
-#bt{
+
+ #bt{
   font-size: 15px;
   color:lightblue;
 }
@@ -24,10 +25,9 @@
 .custom-panel {
   background-image: url(../assets/imgs/rural-road_JUWHTFEDY9.jpg);
   width: 100%;
-  height: 100%;
+  height: 200px;
   background-size: cover;
 } 
-
 
 .search-button {
   background-color: var(--darkblue);
@@ -36,20 +36,28 @@
   color: white;
 }
 
-.panel {
-  position: sticky;
-  bottom: 0;
+.footerpanel {
+  position: relative;
+  top: 255px;
+  height: 150px;
   background-color: var(--lightblue);
   text-align: center;
+  
+}
+.footerpanel p{
   font-family: "Space Grotesk", sans-serif;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
+  position: relative;
+  top: 50px;
+
 }
 
 #right-panel {
   position: relative;
-  flex-wrap: wrap;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
   font-family: "Roboto", "sans-serif";
   line-height: 30px;
@@ -68,56 +76,55 @@
 #right-panel i {
   font-size: 12px;
 }
- 
-#map {
+
+ #map {
   position: absolute;
   height: 60%;
   width: 50%;
-  /*justify-content: center;
   float: right;
-  margin-top: 0px;
-  height: 100vh; */
-}
+  align-content: center;
+  top: 200px;
+  left: 450px;
+}  
 
 .gasPrice {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-wrap: nowrap;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+
 } 
   
 .list {
-  position: relative;
+  position: absolute;
+  top: 100px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
 }
 
-#right-panel {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  margin: 20px;
-  border-width: 2px;
-  width: 20%;
-  height: 400px;
-  text-align: left;
-  padding-top: 0;
+.googlesearch {
+  position: absolute;
+  top: 100px;
+  right: -600px;
+
 }
 
 #directions-panel {
-  position: relative;
-  margin-top: 10px;
+  position: absolute;
+  top: 150px;
   background-color: var(--darkblue);
   color: white;
   font-size: 20px;
   padding: 10px;
   overflow: scroll;
-  height: 174px;
+  height: 174px; 
 } 
 
 /* start of modal styling */
-.modalForm {
+ .modalForm {
   position: static;
   display: flex;
   flex-wrap: wrap;
