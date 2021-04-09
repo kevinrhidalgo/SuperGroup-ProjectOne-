@@ -13,7 +13,7 @@ function addMarkerWithInfowindow(map, marker_position, infowindow_content){
   //the content string is makes the infowindow available to add content for the markers
   contentString = infowindow_content;
   infowindow = new google.maps.InfoWindow({
-      content: contentString
+      content: contentString, 
   });
   //the addlistner for the clicked markers so the content on the infowindow can appear
   marker.addListener('click', function() {
@@ -45,15 +45,15 @@ var map = new google.maps.Map(mapDiv, {
 });
 
 // the markers with its lat/lng coordinates to appear on the map // the infowindow where the location name appears on the map
-addMarkerWithInfowindow(map, new google.maps.LatLng(28.3852,-81.5639), 'Disney World');
-addMarkerWithInfowindow(map, new google.maps.LatLng(28.5392,-81.3839), 'Amway Arena');
-addMarkerWithInfowindow(map, new google.maps.LatLng(28.4985,-80.9976), 'Tosohatche Wildlife Area');
-addMarkerWithInfowindow(map, new google.maps.LatLng(28.2359,-80.8212), 'Rivers Lake Conservation Area');
-addMarkerWithInfowindow(map, new google.maps.LatLng(27.8225,-80.5602), 'St.Sebastian River Preserve Park');
+addMarkerWithInfowindow(map, new google.maps.LatLng(28.3852,-81.5639), 'Disney World:<br> Home of all things wonder');
+addMarkerWithInfowindow(map, new google.maps.LatLng(28.5392,-81.3839), 'Amway Arena:<br> Home of the NBAs Orlando Magic');
+addMarkerWithInfowindow(map, new google.maps.LatLng(28.4985,-80.9976), 'Tosohatche Wildlife Area: <br> an excellent place to view wildlife year-round and<br> is a site on the Great Florida Birding and Wildlife Trail');
+addMarkerWithInfowindow(map, new google.maps.LatLng(28.2359,-80.8212), 'Rivers Lake Conservation Area:<br> Wetland area & wildlife habitat popular for bird-watching, <br>fishing, boating, hiking & picnicking');
+addMarkerWithInfowindow(map, new google.maps.LatLng(27.8225,-80.5602), 'St.Sebastian River Preserve Park:<br> Florida State Park, located three miles north of Fellsmere');
 addMarkerWithInfowindow(map, new google.maps.LatLng(26.7153,-80.0534), 'West Palm Beach');
-addMarkerWithInfowindow(map, new google.maps.LatLng(25.7776,-80.2377), 'Little Havana');
-addMarkerWithInfowindow(map, new google.maps.LatLng(25.7814,-80.1870), 'American Airlines Arena');
-addMarkerWithInfowindow(map, new google.maps.LatLng(25.7459,-80.5550), 'Everglades National Park');
+addMarkerWithInfowindow(map, new google.maps.LatLng(25.7776,-80.2377), 'Little Havana: Miami’s vibrant Cuban heart,<br> with Latin American art galleries, <br> restaurants, cafes and more');
+addMarkerWithInfowindow(map, new google.maps.LatLng(25.7814,-80.1870), 'American Airlines Arena: <br>Home of the Miami Heat NBA Team');
+addMarkerWithInfowindow(map, new google.maps.LatLng(25.7459,-80.5550), 'Everglades National Park:<br> Home to one of the largest wetlands in the world,<br> But the park is best known for its mangroves, sawgrass prairies, and freshwater slough that draws water from Lake Okeechobee southward');
 
 //getting the element id submit on the html so when clicked on, the distanced betweene the starting and end points appear
     directionsRenderer.setMap(map);
