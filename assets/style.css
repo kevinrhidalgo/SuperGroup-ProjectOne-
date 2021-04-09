@@ -55,11 +55,7 @@
 }
 
 #right-panel {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  display: inline;
   font-family: "Roboto", "sans-serif";
   line-height: 30px;
   padding-left: 10px;
@@ -106,12 +102,7 @@
   justify-content: right;
 }
 
-.googlesearch {
-  position: absolute;
-  top: 100px;
-  right: -600px;
 
-}
 
 #directions-panel {
   position: absolute;
@@ -168,7 +159,11 @@
 }
 
 #theGasP{
-  border: lightblue solid 10px;
-  background-color: burlywood
-  
+  border: var(--lightblue) solid 7px;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+h4 {
+  font-style: italic;
 }
