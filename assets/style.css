@@ -166,3 +166,9 @@
 .translucent-form-overlay input::placeholder {
   color: #8a8a8a;
 }
+
+#theGasP{
+  border: burlywood solid 10px;
+  background-color: var(--lightblue);
+  
+}
