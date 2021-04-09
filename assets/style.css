@@ -1,4 +1,4 @@
- :root {
+:root {
   --lightblue: #2fa8e0;
   --darkblue: #106a94;
   --red: #e00421;
@@ -8,6 +8,7 @@
 
 * {
   font-family: "Space Grotesk", sans-serif;
+  
 }
 
  #bt{
