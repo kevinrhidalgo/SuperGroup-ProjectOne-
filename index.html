@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+   
     <title>Jaunt</title>
 </head>
+
 <body>
 
    <div class="bg-img"> 
@@ -19,25 +21,22 @@
     </div>
    </div>    
 
-
-
-
-
-    <!-- start of modal -->
-
-    <aside class = "modalForm">
-     <div class="translucent-form-overlay">
+          <!-- start of modal -->
+  
+    <div class= "grid-x grid-margin-x">
+      <div class = "cell"> <aside class = "modalForm"></div>
+     <div class="translucent-form-overlay" class= large-3>
        <form>
          
          <h2>Plan Your Road Trip</h2>
-         <div class="row columns">
+         <div class="row columns" class= large-3>
 
            <label>Starting Point
-             <input type="text" name="startpoint" placeholder="Any" id = "startpoint" class = "form-input" value="city">
+             <input type="text" name="startpoint" placeholder="Any" id = "startpoint" class= large-6 class = "form-input" value="city">
            </label>
 
          </div>
-         <div class="row columns">
+         <div class="row columns" class= large-3>
             <label>Select Fuel Type</label>
 
             <select name="selectGas" type="gasChoice" id = "form-input">
@@ -56,34 +55,34 @@
               </select>
           
          </div>
-        <button type="button" id = "btn" class="primary button expanded search-button">
+        <button type="button" id = "btn" class="primary button expanded search-button" class= large-3>
           Search
         </button>
-        <fieldset class="large-8 cell">
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Great Tourist Spots</label>
+        <fieldset class="large-3 cell">
+          <input id="checkbox1" type="checkbox" class= large-6><label for="checkbox1">Great Tourist Spots</label>
         </fieldset>
-       </form>
-     </div>
+      </form>
+      <section class = "map" class = "large-3"></section>
+      </div>
     </aside>  
+  </div>
+  
+  
 
 
+          <!-- end of modal -->
 
 
-
-   <!-- end of modal -->
-
-
- <!-- the map should hook into here and display from here, should be in the center of the screen-->
- <!--div grid x  -->
+          <!-- the map should hook into here and display from here, should be in the center of the screen-->
+          <!--div grid x  -->
    
-  <section class = "map"></section>
   
 
   
-  <!-- this is where we can hitch the gas station api -->
+          <!-- this is where we can hitch the gas station api -->
   <div class = "gasPrice large-5 cell">
         <div>
-          <h4>Gas stations for your trip:</h4>
+          <h4>Gas prices for your trip:</h4>
           <ul class = "Orlando"></ul>
           <ul class = "Melbourne"></ul>
           <ul class = "Pt-St-Lucie"></ul>
@@ -93,12 +92,12 @@
         </div>
       </div>
  
-    <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
+           <!-- this should be displayed next to the map on the right, showing the list of the filters from checkboxes-->
     <div class = "list">
         <div id = "landmark" >Tourist Attractions</div>
       </div>
 
-    <!-- this is the google map display -->
+           <!-- this is the google map display -->
 
     <div id="map" class="float-right"></div>
     <div id="right-panel">
