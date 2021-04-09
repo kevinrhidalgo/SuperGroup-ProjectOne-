@@ -13,7 +13,7 @@ function addMarkerWithInfowindow(map, marker_position, infowindow_content){
   //the content string is makes the infowindow available to add content for the markers
   contentString = infowindow_content;
   infowindow = new google.maps.InfoWindow({
-      content: contentString
+      content: contentString, 
   });
   //the addlistner for the clicked markers so the content on the infowindow can appear
   marker.addListener('click', function() {
