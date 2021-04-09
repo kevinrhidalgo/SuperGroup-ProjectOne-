@@ -168,7 +168,7 @@
 }
 
 #theGasP{
-  border: burlywood solid 10px;
-  background-color: var(--lightblue);
+  border: lightblue solid 10px;
+  background-color: burlywood;
   
 }
