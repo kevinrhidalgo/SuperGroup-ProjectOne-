@@ -168,7 +168,11 @@
 }
 
 #theGasP{
-  border: lightblue solid 10px;
-  background-color: burlywood;
-  
+  border: var(--lightblue) solid 7px;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+h4 {
+  font-style: italic;
 }
