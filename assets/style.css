@@ -68,12 +68,15 @@
 #right-panel i {
   font-size: 12px;
 }
-
+ 
 #map {
-  position: relative;
+  position: absolute;
   height: 60%;
   width: 50%;
-  justify-content: center;
+  /*justify-content: center;
+  float: right;
+  margin-top: 0px;
+  height: 100vh; */
 }
 
 .gasPrice {
