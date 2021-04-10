@@ -41,47 +41,6 @@ function getObject() {
   console.log(retrieveObject.GasCity);
 //   cityFetch(citySearched);
 }
-// if searched city = data.city put that data on the page
-
-// function cityFetch(citySearched) {
-//   var cityQuery = "https://api.collectapi.com/gasPrice/stateUsaPrice?state=FL";
-//   // fetch(cityQuery) + GasCity +
-//   console.log("This is city query");
-//   console.log(cityQuery);
-//   fetch(cityQuery, {
-//     headers: {
-//       authorization: "apikey " + gasApi,
-//     },
-//   })
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
-//     });
-// }
-
-// var gasSearch = getValue;
-
-//hook city searched into api
-
-// var gasSearch= document.getElementById("text");
-// localStorage.setItem("text", gasSearch.value);
-
-// Gas Prices API test for dataset in console log
-
-// fetch('https://api.collectapi.com/gasPrice/stateUsaPrice?state=FL', {
-//     method: 'POST',
-//     headers: {
-//         'authorization': 'apikey 4q4IHx619b47CaX35Ji9xZ:0jz3gHaXHLos0Lj2yXBANg',
-//         'content-type': 'application/json'
-//     }
-//   }).then((response)=> {
-//       console.log(response.status)
-//       return response.json();
-//     }).then((data)=>{
-//         console.log(data);
-//     });
 
 // these variables pull the UL from the html
 
@@ -99,7 +58,7 @@ function getApiData() {
     fetch("https://api.collectapi.com/gasPrice/stateUsaPrice?state=FL", {
   method: "POST",
   headers: {
-    authorization: "apikey 52sLDeYURVVXKW8bageYZQ:0LSQbKiaix3LHU12xLIuLI",
+    authorization: apiKey,
     "content-type": "application/json",
   },
 })
